@@ -4,13 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       environment:
-        description: "Choose environment"
+        description: "Type 'prod' or 'nonprod'"
         required: true
         default: "prod"
-        type: choice
-        options:
-          - prod
-          - nonprod
 
 jobs:
   demo-job:
