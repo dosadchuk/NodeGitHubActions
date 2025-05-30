@@ -15,13 +15,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Print environment
-        run: echo "Environment selected: ${{ github.event.inputs.environment }}"
+      - name: Run Hello World
+        run: echo "Hello triggered manually!"
+      - name: Run Hello Actions
+        run: echo "Hello Github actions!!!!"
 
-      - name: Say hello from master
-        if: github.event.inputs.environment == 'prod'
-        run: echo "Hello from master"
-
-      - name: Say hello from test3
-        if: github.event.inputs.environment == 'nonprod'
-        run: echo "Hello from test3"
