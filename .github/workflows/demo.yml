@@ -2,6 +2,11 @@ name: Demo Workflow
 
 on:
   workflow_dispatch:
+    inputs:
+      environment:
+        description: "Type 'prod' or 'nonprod'"
+        required: true
+        default: "prod"
 
 jobs:
   demo-job:
@@ -14,3 +19,4 @@ jobs:
         run: echo "Hello triggered manually!"
       - name: Run Hello Actions
         run: echo "Hello Github actions!!!!"
+
