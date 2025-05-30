@@ -13,4 +13,4 @@ jobs:
       - name: Run Hello World
         run: echo "Hello triggered manually!"
       - name: Run Hello Actions
-        run: echo "Hello Github actions!"
+        run: echo "Hello Github actions!!!!"
